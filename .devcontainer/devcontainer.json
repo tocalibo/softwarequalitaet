@@ -3,7 +3,16 @@
 {
   "name": "Node.js",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "cypress/browsers:latest"
+"image": "cypress/browsers:latest",
+"customizations": {
+	"vscode": {
+		"extensions": [
+			"GitHub.copilot",
+			"GitHub.copilot-chat",
+			"dbaeumer.vscode-eslint"
+		]
+	}
+}
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
