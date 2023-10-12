@@ -4,7 +4,7 @@ In der ersten Veranstaltung ging es ganz allgemein um das Thema Softwarequalitä
 
 Starten wollen wir mit einer Gruppenübung, in der ihr euch mit verschiedenen Aspekten von Softwarequalität auseinandersetzen sollt. Dazu werden wir uns in vier Gruppen aufteilen. Jede Gruppe erhält eine Aufgabe, die sie in der Gruppe bearbeitet.
 
-Jede Gruppe hat für die Bearbeitung der Aufgabe **40 Minuten Zeit** erstellt auf Grundlage ihrer Recherche erstellt eine **10-minütige Präsentation** mit dem Ziel, die Ergebnisse den anderen Gruppen zu präsentieren.
+Jede Gruppe hat für die Bearbeitung der Aufgabe **40 Minuten Zeit** und erstellt auf Grundlage ihrer Recherche erstellt eine **10-minütige Präsentation** mit dem Ziel, die Ergebnisse den anderen Gruppen zu präsentieren.
 
 ## Gruppe 1: Software-Metriken
 
