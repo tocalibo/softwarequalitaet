@@ -5,7 +5,7 @@
 In dieser Praktikumsaufgabe befassen Sie sich mit dem Thema Continuous Integration (CI) im Kontext von Softwarequalität. Die Basis hierfür bildet eine einfache 'ToDo'-Anwendung, die auf GitHub unter folgendem Link bereitsteht: https://github.com/fhswf/todo.
 
 Ihre Aufgabe besteht darin, eine GitHub-Action zu erstellen, die automatisierte Tests und eine Qualitätsprüfung mit SonarQube durchführt. 
-**Bitte bearbeiten Sie die Aufgabe in Gruppen á 2–3 Personen!**
+**Bitte bearbeiten Sie die Aufgabe in Gruppen à 2–3 Personen!**
 
 ### Vorbereitung
 
