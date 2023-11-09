@@ -21,5 +21,5 @@ Mittels *[Continuous Integration (CI)](https://de.wikipedia.org/wiki/Kontinuierl
 Gute Praxis ist es, dass dies bei der Verwendung einer Versionsverwaltung wie GitHub oder GitLab bei jedem *pull request* auf den *main branch* automatisch geschieht. Im Falle eines Fehlers in den Tests wird der *merge* eines *pull request* abgebrochen.
 Dadurch wird gewährleistet, dass der *main branch* stets eine (laut den Tests) funktionierende Version des Softwareproduktsliefert.
 
-
+Die [Übungsaufgabe zu CI](Exercises/CI_ToDo/README.md) bearbeiten Sie bitte in **Gruppen á 2–3 Personen**.
 
