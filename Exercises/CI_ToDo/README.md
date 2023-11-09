@@ -40,7 +40,7 @@ Präsentieren Sie in dieser Datei
 
 ### Abgabe
 
-Zur Abgabe erstellen Sie bitte einen Pull-Request im [Original-Repository https://github.com/fhswf/todo](https://github.com/fhswf/todo)
+Zur Abgabe erstellen Sie bitte einen Pull-Request im [Original-Repository https://github.com/fhswf/todo](https://github.com/fhswf/todo).
 
 ### Lernziele
 
