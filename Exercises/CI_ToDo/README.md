@@ -22,9 +22,17 @@ Ihre Aufgabe besteht darin, eine GitHub-Action zu erstellen, die automatisierte 
 1. **Erstellen Sie automatisierte Tests**: Der nächste Schritt ist die Erstellung automatisierter Tests. Hierfür sollten Sie zunächst Tests für wichtige Funktionen der Anwendung erstellen und diese lokal ausführen. Gewährleisten Sie dabei eine gute Testabdeckung und achten Sie auf unterschiedliche Testarten (Unit-Tests für das Backend, End2End-Tests für die gesamte Anwendung).
 <br>Erstellen Sie unter anderem auch einen Testfall für die Aktualisierung des Status eines ToDos über den Status-Button. Dieser sollte fehlschlagen.
 
-3. **Einrichten einer GitHub-Action**: Nun sollen Sie eine GitHub-Action erstellen. In dieser soll automatisch bei jedem Push oder Pull Request auf das Repository der erstellte Test-Suite durchgeführt werden. 
+3. **Einrichten einer GitHub-Action**: Nun sollen Sie eine GitHub-Action erstellen. In dieser soll automatisch bei jedem Push oder Pull Request auf das Repository der erstellte Test-Suite durchgeführt werden.
+   > **HINWEIS**: Sie müssen dazu in Ihrem Workflow MongoDB als zusätzlichen Service einfügen.
+   ```yaml
+   services:
+     mongodb:
+       image: mongo:4.4
+       ports:
+         - 27017:27017
+   ```
 
-4. **Integration von SonarQube**: Neben den Tests wollen wir auch eine statische Code-Analyse durchführen. Verwenden Sie hierzu die SonarQube-Instanz [hopper.fh-swf.de/sonarqube](https://hopper.fh-swf.de/sonarqube). 
+5. **Integration von SonarQube**: Neben den Tests wollen wir auch eine statische Code-Analyse durchführen. Verwenden Sie hierzu die SonarQube-Instanz [hopper.fh-swf.de/sonarqube](https://hopper.fh-swf.de/sonarqube). 
    Dort können Sie sich mit Ihrem GitHub-Account anmelden und ein Projekt anlegen.
    Passen Sie die GitHub-Action so an, dass nach den Tests automatisch SonarQube gestartet wird und den Code analysiert.<br>
    > **Tipp**: Dafür gibt es fertige Actions. Schauen Sie gerne [github.com/fhswf/book_me](https://github.com/fhswf/book_me) nach, wie man sie verwendet.
@@ -82,9 +90,9 @@ Ihre Aufgabe besteht darin, eine GitHub-Action zu erstellen, die automatisierte 
    -----END CERTIFICATE-----
    ```
 
-5. **Auswertung der Ergebnisse**: Schauen Sie sich die Ergebnisse der Tests und die SonarQube-Berichte an. Falls es Fehler gibt, sollten Sie diese jetzt beheben und den Prozess erneut durchführen.
+6. **Auswertung der Ergebnisse**: Schauen Sie sich die Ergebnisse der Tests und die SonarQube-Berichte an. Falls es Fehler gibt, sollten Sie diese jetzt beheben und den Prozess erneut durchführen.
 
-6. **Dokumentation**: Im letzten Schritt sollen Sie Ihre Arbeit dokumentieren. Tragen Sie dazu in der Datei `BERICHT.md` die Namen Ihrer Teammitglieder ein. 
+7. **Dokumentation**: Im letzten Schritt sollen Sie Ihre Arbeit dokumentieren. Tragen Sie dazu in der Datei `BERICHT.md` die Namen Ihrer Teammitglieder ein. 
 Präsentieren Sie in dieser Datei
 -  Ihre Vorgehensweise, 
 - die gewählten Lösungen, 
