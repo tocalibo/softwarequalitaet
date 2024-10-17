@@ -4,7 +4,13 @@
 
 Das Ziel dieser Übung ist, das Konzept des **Test-Driven Developments** zu verstehen und anzuwenden. Es ist wichtig, zuerst die Testfälle zu definieren und dann den Code entsprechend zu schreiben. Dies trägt dazu bei, sauberen und fehlerfreien Code zu schreiben.
 
-Deine Aufgabe besteht darin, eine einfache Webanwendung zur Berechnung des Body-Mass-Index (BMI) aufzusetzen. Der Fokus liegt dabei auf dem Test-Driven-Development (TDD)-Ansatz. Die Anwendung soll in Javascript geschrieben sein und die Tests sollen mit Jest erstellt und durchgeführt werden.
+Deine Aufgabe besteht darin, eine einfache Webanwendung zur Berechnung des Body-Mass-Index (BMI) aufzusetzen. Der Fokus liegt dabei auf dem Test-Driven-Development (TDD)-Ansatz. Für das Testen des *Frontends* verwenden wir [Cypress](https://www.cypress.io/).
+
+> [!NOTE]
+> Das *Backend* der Anwendung besteht aus einem reinen Webserver (`express.static`), daher erstellen wir für das Backend zunächst keine Testfälle. 
+> Wer mit der Übung fertig ist, kann die "Geschäftslogik" in das Backend verlegen und
+> zusätzlich Testfälle für das Backend entwickeln (dafür bieten sich die Tools `jest` und `supertest` an). 
+
 
 ## Setup
 
@@ -41,4 +47,4 @@ Implementiere die Anwendung in TypeScript. Der Code sollte den in den Tests defi
 
 ### Schritt 4: Test und Refactoring
 
-Führe die Jest-Tests aus und überprüfe, ob alle Testfälle korrekt sind. Falls Fehler auftreten, überarbeite den Code entsprechend und führe die Test erneut aus. Wiederhole diesen Schritt, bis alle Tests erfolgreich sind.
+Führe die Cypress-Tests aus und überprüfe, ob alle Testfälle korrekt sind. Falls Fehler auftreten, überarbeite den Code entsprechend und führe die Test erneut aus. Wiederhole diesen Schritt, bis alle Tests erfolgreich sind.
