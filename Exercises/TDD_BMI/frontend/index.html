@@ -11,19 +11,57 @@
 
     <div>
         <label for="weight">Gewicht (in kg):</label>
-        <input id="weight" type="range" min="30" max="180">
-        <span id="show_weight" />
+        <input id="weight" type="range" min="0" max="200" label="weight">
+        <input id="weight_input" type="number" min="0" max="200" label="weight_input">
+        <span id="show_weight"></span>
     </div>
 
     <div>
         <label for="height">Größe (in cm):</label>
-        <input id="height" type="range" min="100" max="250">
-        <span id="show_height" />
+        <input id="height" type="range" min="0" max="200">
+        <input id="height_input" type="number" min="0" max="200">
+        <span id="show_height"></span>
     </div>
 
     <div id="result"></div>
 
-    <script src="main.js"></script>
+    <script>
+        const weightSlider = document.getElementById('weight');
+        const weightInput = document.getElementById('weight_input');
+        const heightSlider = document.getElementById('height');
+        const heightInput = document.getElementById('height_input');
+
+        weightSlider.addEventListener('input', function() {
+            weightInput.value = weightSlider.value;
+        });
+
+        weightInput.addEventListener('input', function() {
+            weightSlider.value = weightInput.value;
+        });
+
+        heightSlider.addEventListener('input', function() {
+            heightInput.value = heightSlider.value;
+        });
+
+        heightInput.addEventListener('input', function() {
+            heightSlider.value = heightInput.value;
+        });
+        
+        const calculateBMIButton = document.createElement('button');
+        calculateBMIButton.textContent = 'BMI Berechnen';
+        document.body.appendChild(calculateBMIButton);
+
+        calculateBMIButton.addEventListener('click', function() {
+            const weight = parseFloat(weightInput.value);
+            const height = parseFloat(heightInput.value) / 100; // convert cm to meters
+            if (weight > 0 && height > 0) {
+            const bmi = (weight / (height * height)).toFixed(2);
+            document.getElementById('result').textContent = `Ihr BMI ist ${bmi}`;
+            } else {
+            document.getElementById('result').textContent = 'Bitte geben Sie gültige Werte ein.';
+            }
+        });
+    </script>
 </body>
 
 </html>
